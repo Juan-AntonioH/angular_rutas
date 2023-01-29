@@ -1,0 +1,10 @@
+<div style="display: flex; flex-direction: row; align-items: center;">
+  <h4>Nombre: </h4>
+  <h1> {{cliente.nombre}}</h1>
+</div>
+<div style="display: flex; flex-direction: row; align-items: center;">
+  <h4>Cargo: </h4>
+  <h1> {{cliente.cargo}}</h1>
+</div>
+<button routerLink="/clientes">Volver</button>
+<button (click)="borrar(cliente.id)">Borrar cliente</button>

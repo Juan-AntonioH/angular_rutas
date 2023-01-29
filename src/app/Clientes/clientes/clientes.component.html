@@ -1,0 +1,23 @@
+<div style="display: flex; flex-direction: row;">
+<h1>Lista de clientes</h1>
+<button style="margin-left:4vw" (click)="nuevoCliente()">Nuevo cliente</button>
+</div>
+<br>
+<table>
+  <tr>
+    <th>ID Cliente</th>
+    <th>Nombre Cliente</th>
+    <th>Cargo Cliente</th>
+    <th>Acciones</th>
+  </tr>
+  <tr *ngFor="let cliente of clientes">
+    <td>{{cliente.id}}</td>
+    <td>{{cliente.nombre}}</td>
+    <td>{{cliente.cargo}}</td>
+    <td>
+      <button (click)="infoCliente(cliente.id)">Ver ficha</button>
+      <button (click)="editCliente(cliente.id)">Modificar</button>
+      <button (click)="borrarCliente(cliente.id)">Borrar</button>
+    </td>
+  </tr>
+</table>

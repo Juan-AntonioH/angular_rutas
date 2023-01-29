@@ -1,0 +1,31 @@
+<form>
+  <label for="id">ID</label>
+  <br>
+  <input name="id" [(ngModel)]="cliente.id" placeholder="Id del cliente">
+  <br>
+  <label for="nombre">Nombre</label>
+  <br>
+  <input name="nombre" [(ngModel)]="cliente.nombre" placeholder="Pepito">
+  <br>
+  <label for="cargo">Cargo</label>
+  <br>
+  <input name="cargo" [(ngModel)]="cliente.cargo" placeholder="Probador de colchones">
+</form>
+<br>
+<button (click)="nuevoCliente()">nuevo Cliente</button>
+
+<!-- <form #datos="ngForm" (ngSubmit)="enviar(datos)">
+  <label for="id">ID</label>
+  <br>
+  <input name="id" ngModel placeholder="Id del cliente">
+  <br>
+  <label for="nombre">Nombre</label>
+  <br>
+  <input name="nombre" ngModel placeholder="Pepito">
+  <br>
+  <label for="cargo">Cargo</label>
+  <br>
+  <input name="cargo" ngModel placeholder="Probador de colchones">
+  <button>Submit</button>
+</form>
+<br> -->

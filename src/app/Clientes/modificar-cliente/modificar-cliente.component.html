@@ -1,0 +1,15 @@
+<form>
+  <label for="id">ID</label>
+  <br>
+  <input name="id" [readOnly]="true" placeholder={{cliente.id}}>
+  <br>
+  <label for="nombre">Nombre</label>
+  <br>
+  <input name="nombre" [(ngModel)]="cliente.nombre" placeholder={{cliente.nombre}}>
+  <br>
+  <label for="cargo">Cargo</label>
+  <br>
+  <input name="cargo" [(ngModel)]="cliente.cargo" placeholder={{cliente.cargo}}>
+</form>
+<br>
+<button (click)="modificarDatos()">Modificar</button>
